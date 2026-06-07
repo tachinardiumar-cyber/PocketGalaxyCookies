@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocket Galaxy Cookies</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS (Play CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ['"Space Grotesk"', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            brown: '#8b4513',
+                            brownDark: '#5c2e0b',
+                            brownLight: '#cd853f',
+                            galaxy1: '#020617', /* slate-950 */
+                            galaxy2: '#1e3a8a', /* blue-900 */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body bg-gradient-to-br from-brand-galaxy1 via-blue-950 to-slate-900 text-white min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-brand-galaxy1/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-cookie-bite text-amber-700 text-2xl"></i>
+                    <span class="font-heading font-bold text-xl md:text-2xl tracking-tight text-white">
+                        Pocket Galaxy Cookies
+                    </span>
+                </div>
+                <div>
+                    <a href="#pesan" class="inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-sm font-medium rounded-full text-white bg-amber-700 hover:bg-amber-800 transition-colors shadow-[0_0_15px_rgba(180,83,9,0.4)]">
+                        Pesan
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://i.postimg.cc/sxP05g2S/1766370751198-2.jpg" alt="Galaxy Cookies" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-b from-brand-galaxy1/80 via-blue-950/70 to-slate-900/95"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-10">
+            <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6 drop-shadow-lg text-transparent bg-clip-text bg-gradient-to-r from-white to-amber-200">
+                🌌 Gigitan Manis Sebesar Galaksi dalam Genggamanmu!
+            </h1>
+            <p class="mt-4 text-base sm:text-lg md:text-xl text-gray-200 mb-10 max-w-3xl mx-auto leading-relaxed drop-shadow-md">
+                Selamat datang di Pocket Galaxy Cookies! Kami membawa kelezatan out of this world langsung ke tanganmu. Nikmati sensasi soft-baked cookies dengan tekstur yang super chewy, lumer di dalam, dan dibuat menggunakan cokelat premium pilihan. Setiap pesanan dibuat dengan sistem Pre-Order (PO) 24 jam sehingga cookies yang meluncur ke tempatmu selalu fresh from the oven!
+            </p>
+            <a href="#menu" class="inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold rounded-full text-white bg-amber-700 hover:bg-amber-800 transition-all duration-300 hover:scale-105 shadow-[0_0_20px_rgba(184,115,51,0.5)]">
+                Jelajahi Menu <i class="fa-solid fa-rocket"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-4">🚀 Menu Orbit Kami</h2>
+                <p class="text-gray-300 text-lg">Pilih rasi bintang favoritmu dari varian cookies andalan kami:</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: Original (Available) -->
+                <div class="bg-white/5 border border-amber-700/50 rounded-2xl p-6 backdrop-blur-sm hover:-translate-y-2 transition-transform duration-300 shadow-[0_0_20px_rgba(180,83,9,0.15)] relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 bg-amber-700 text-white text-xs font-bold px-3 py-1 rounded-bl-lg z-10">Tersedia Sekarang!</div>
+                    <div class="h-48 w-full bg-amber-900/30 rounded-xl mb-6 flex items-center justify-center group-hover:bg-amber-900/40 transition-colors">
+                        <i class="fa-solid fa-cookie text-6xl text-amber-500 drop-shadow-[0_0_10px_rgba(245,158,11,0.5)]"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold text-amber-500 mb-2">Original Cookies</h3>
+                    <p class="text-xl font-semibold text-white mb-4">Rp10.000</p>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Kelezatan klasik yang timeless. Perpaduan adonan chewy dan lelehan cokelat premiumnya siap meledak di mulutmu layaknya supernova!
+                    </p>
+                </div>
+
+                <!-- Card 2: Matcha (Coming Soon) -->
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm opacity-80 relative">
+                    <div class="absolute top-0 right-0 bg-slate-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg z-10">Coming Soon!</div>
+                    <div class="h-48 w-full bg-emerald-900/20 rounded-xl mb-6 flex items-center justify-center">
+                        <i class="fa-solid fa-leaf text-6xl text-emerald-600"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold text-gray-300 mb-2">Matcha Cookies</h3>
+                    <p class="text-xl font-semibold text-gray-400 mb-4">Rp15.000</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Bawa ketenangan alam semesta dengan rasa matcha yang autentik. Sedang dalam perjalanan menuju orbitmu!
+                    </p>
+                </div>
+
+                <!-- Card 3: Red Velvet (Coming Soon) -->
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm opacity-80 relative">
+                    <div class="absolute top-0 right-0 bg-slate-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg z-10">Coming Soon!</div>
+                    <div class="h-48 w-full bg-rose-900/20 rounded-xl mb-6 flex items-center justify-center">
+                        <i class="fa-solid fa-certificate text-6xl text-rose-700"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold text-gray-300 mb-2">Red Velvet Cookies</h3>
+                    <p class="text-xl font-semibold text-gray-400 mb-4">Rp15.000</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Perpaduan manis dan gurih yang elegan. Bersiaplah untuk pendaratan rasa yang sempurna!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Section -->
+    <section class="py-16">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-amber-900 via-orange-900 to-amber-950 rounded-3xl p-8 md:p-12 border border-amber-700/50 shadow-[0_0_30px_rgba(180,83,9,0.3)] flex flex-col md:flex-row items-center gap-8">
+                <div class="flex-shrink-0">
+                    <i class="fa-solid fa-star text-6xl text-yellow-400 animate-pulse drop-shadow-[0_0_15px_rgba(250,204,21,0.6)]"></i>
+                </div>
+                <div>
+                    <h2 class="font-heading text-2xl md:text-3xl font-bold text-white mb-3">💫 Misi Spesial: Loyalty Reward!</h2>
+                    <p class="text-amber-100 md:text-lg leading-relaxed">
+                        <span class="font-bold text-yellow-400">PROMO SPESIAL:</span> Kumpulkan terus riwayat pesananmu! Setiap kali akumulasi pesananmu mencapai 10 pcs cookies, kamu berhak mendapatkan <span class="font-bold text-white bg-amber-700 px-2 py-0.5 rounded">DISKON 20%!</span> Jajan makin sering, makin untung.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Pengiriman Section -->
+    <section class="py-16 bg-slate-900/50 border-y border-white/5">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-3xl font-bold text-white mb-4">🛰️ Info Pendaratan & Pengiriman</h2>
+                <p class="text-gray-400">Kami siap menerbangkan cookies ini langsung ke titik koordinatmu:</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex items-start gap-4 bg-white/5 p-6 rounded-2xl border border-white/10">
+                    <div class="w-12 h-12 rounded-full bg-blue-900/50 flex items-center justify-center flex-shrink-0 text-blue-400 border border-blue-500/30">
+                        <i class="fa-solid fa-motorcycle text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-heading font-bold text-lg text-white mb-1">Kurir Lokal</h4>
+                        <p class="text-gray-400 text-sm">Siap meluncur aman untuk area Ternate.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 bg-white/5 p-6 rounded-2xl border border-white/10 opacity-70">
+                    <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center flex-shrink-0 text-gray-400 border border-gray-600">
+                        <i class="fa-solid fa-box-open text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-heading font-bold text-lg text-gray-300 mb-1">Grab / GoSend</h4>
+                        <p class="text-gray-500 text-sm">(Coming Soon) Layanan pendaratan instan sedang kami persiapkan!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / CTA Terakhir Section -->
+    <footer id="pesan" class="pt-24 pb-12 relative overflow-hidden">
+        <!-- Decorative subtle glow -->
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-amber-900/20 blur-[100px] rounded-full pointer-events-none"></div>
+        
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-4">📞 Siap Meluncur ke Orbit Rasa?</h2>
+            <p class="text-gray-300 mb-10 leading-relaxed text-lg">
+                Jangan sampai kehabisan slot PO hari ini! Hubungi salah satu mission control kami di bawah ini untuk pemesanan yang cepat dan mudah:
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                <!-- Admin 1 Button -->
+                <a href="https://wa.me/6285240719322" target="_blank" rel="noopener noreferrer" 
+                   class="w-full sm:w-auto inline-flex justify-center items-center gap-2 px-8 py-4 font-semibold rounded-full text-white bg-[#25D366] hover:bg-[#1ebd5a] transition-all duration-300 hover:scale-105 shadow-[0_0_15px_rgba(37,211,102,0.4)]">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Chat Admin 1
+                </a>
+                
+                <!-- Admin 2 Button -->
+                <a href="https://wa.me/6282393053919" target="_blank" rel="noopener noreferrer" 
+                   class="w-full sm:w-auto inline-flex justify-center items-center gap-2 px-8 py-4 font-semibold rounded-full text-white bg-[#25D366] hover:bg-[#1ebd5a] transition-all duration-300 hover:scale-105 shadow-[0_0_15px_rgba(37,211,102,0.4)]">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Chat Admin 2
+                </a>
+            </div>
+
+            <div class="border-t border-white/10 pt-8">
+                <div class="flex items-center justify-center gap-2 mb-2 text-amber-500">
+                    <i class="fa-solid fa-cookie-bite"></i>
+                </div>
+                <p class="font-heading text-gray-400 tracking-wider">
+                    Pocket Galaxy Cookies – A bite of the universe. 🌠
+                </p>
+                <p class="text-xs text-gray-600 mt-4">&copy; 2026 Pocket Galaxy Cookies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
